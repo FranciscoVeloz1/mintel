@@ -1,0 +1,2 @@
+# mintel
+Mintel landing page
