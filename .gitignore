@@ -74,3 +74,7 @@ yarn-error.log
 
 # Build
 dist/
+# Playwright CLI artifacts
+.playwright-cli/
+*.png
+!public/**

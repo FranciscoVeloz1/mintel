@@ -1,0 +1,110 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-6) var(--space-5);
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 200ms ease, border-color 200ms ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(13, 143, 154, 0.35);
+}
+
+.featured {
+  border-color: rgba(13, 143, 154, 0.55);
+  background:
+    linear-gradient(180deg, rgba(13, 143, 154, 0.1), transparent 42%),
+    var(--surface-raised);
+  box-shadow: 0 22px 48px rgba(13, 143, 154, 0.16);
+}
+
+@media (min-width: 760px) {
+  .featured {
+    transform: translateY(-8px);
+  }
+
+  .featured:hover {
+    transform: translateY(-12px);
+  }
+}
+
+.badge {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  margin: 0;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: var(--signal);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.price {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--signal-deep);
+  line-height: 1;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  flex: 1;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  color: var(--ink-muted);
+  text-align: left;
+}
+
+.icon {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  color: var(--signal);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-top: var(--space-2);
+  border-radius: 999px;
+  background: var(--signal);
+  color: white;
+  font-weight: 600;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.cta:hover {
+  background: var(--signal-deep);
+  transform: translateY(-1px);
+}
