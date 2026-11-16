@@ -2,8 +2,8 @@
 
 ## Status
 
-- **Stage:** in progress
-- **Audited:** 2026-08-23
+- **Stage:** production ready
+- **Audited:** 2026-09-12
 
 Landing page de Mintel — automatizacion IoT para hogares y empresas.
 
